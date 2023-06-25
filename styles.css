@@ -118,7 +118,7 @@ nav {
     opacity: 0.5; 
 }
 
-.works:hover {
+.works h1:hover {
     color: white; 
     font-size: 2rem; 
     text-shadow: 1px 1px 1px black;
