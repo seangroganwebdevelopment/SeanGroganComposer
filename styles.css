@@ -1,0 +1,128 @@
+@import url();
+
+/* --------------RESEt-------------- */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid lime !important; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLOUR PALETTE:  */
+  --COLOR-ONE: #f07575;
+  --COLOR-TWO: #ecc2c2;
+  --COLOR-THREE: #f5d5d5;
+  --COLOR-FOUR: #eca3a3;
+  --COLOR-FIVE: #f7b3b3;
+  --COLOR-SIX: #833434;
+  --COLOR-SEVEN: #333;
+
+  --COLOR-TEXT: #4e2020;
+  --COLOR-TEXT2: #fff;
+
+  .dark-mode {
+    --COLOR-ONE: #5a99e2;
+    --COLOR-TWO: #97cceb;
+    --COLOR-THREE: #a3e8f1;
+    --COLOR-FOUR: #a3cbec;
+    --COLOR-FIVE: #c5ebe2;
+    --COLOR-SIX: #7e7cec;
+    --COLOR-SEVEN: #333333;
+  }
+
+  .green-mode {
+    --COLOR-ONE: #80e25a;
+    --COLOR-TWO: #44865d;
+    --COLOR-THREE: #79b47e;
+    --COLOR-FOUR: #17e44b;
+    --COLOR-FIVE: #58975b;
+    --COLOR-SIX: #6ac57e;
+    --COLOR-SEVEN: #17a71e;
+  }
+}
+/* || UTILITY CLASSES */
+
+/* Navbar */
+
+nav {
+  background-color: var(--COLOR-FIVE);
+  color: white; 
+  text-shadow: 1px 1px 1px black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Hero Section --*/
+
+.hero {
+  background-image: url("images/nature/alex-hawthorne-EzbYxaZL0L0-unsplash.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;  
+}
+
+.hero h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-shadow: 5px 1px 1px rgb(209, 120, 120);
+
+}
+
+/* Works Section --- */
+
+.works {
+  margin: 2rem 0.8rem;
+  height: 100vh;
+  text-align: center;
+  padding-top: 2rem;
+  border-radius: 2rem;
+
+  background-image: url("images/nature/huper-by-joshua-earle-5lgPYsE_qe0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.works::after {
+    border-radius: 2rem; 
+    content: ''; 
+    position: absolute; 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+    inset: 0; 
+    background-color: var(--COLOR-FOUR); 
+    opacity: 0.5; 
+}
+
+.works:hover {
+    color: white; 
+    font-size: 2rem; 
+    text-shadow: 1px 1px 1px black;
+   
+}
+
+
