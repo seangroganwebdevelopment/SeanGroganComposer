@@ -51,6 +51,18 @@
    padding: 0.25rem 1rem;
  }
 
- /* .uthermotif {
+ .utherdescription img {
+  width: 60%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  padding: 10px; 
+  opacity: 0.8;
+  background-color: pink;
+  
+ }
+
+ #uthermotif {
 width: 100%; 
- } */
+ } 
