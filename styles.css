@@ -84,6 +84,7 @@ nav {
 .navbar2 {
   background-color: var(--COLOR-ONE);
   text-decoration: none;
+ 
 
 }
 
@@ -99,6 +100,8 @@ nav {
   width: 100%;
   color: white;
 
+  
+
 
 }
 
@@ -106,6 +109,8 @@ nav {
   text-decoration: none;
   color: inherit;
   padding: 1rem;
+
+
 }
 
 .navbar2 a:hover {
@@ -118,6 +123,8 @@ nav {
   margin: 0 10px;
   /* Add space around the flex items */
   cursor: pointer;
+
+  white-space: wrap;
 
 }
 
