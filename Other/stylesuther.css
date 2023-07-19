@@ -1,58 +1,40 @@
- /* ---REDUCED HERO SECTION ||| */
 
- .heroreduced {
-   height: 30vh;
+.section2 {
+  background-color: var(--COLOR-ONE);
+}
 
+.utherdescription {
+  background-image: url("images/utherpendragon/artem-sapegin-XGDBdSQ70O0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
 
- }
+  margin: 0rem 0.8rem;
+  height: auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
 
- /* ---WORK DESCRIPTION SECTION ||| */
+.utherdescription::after {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-EIGHT);
+  opacity: 0.78;
 
- .section2 {
-   background-color: var(--COLOR-ONE);
- }
+  border-radius: 2rem;
 
- .utherdescription {
-   background-image: url("images/utherpendragon/artem-sapegin-XGDBdSQ70O0-unsplash.jpg");
-   background-size: cover;
-   background-position: center;
-   position: relative;
-   isolation: isolate;
+  padding: 2rem;
+}
 
-   margin: 0rem 0.8rem;
-   height: auto;
-   text-align: center;
-   padding: 2rem;
-   border-radius: 2rem;
- }
-
- .utherdescription::after {
-   content: '';
-   position: absolute;
-   background-size: cover;
-   background-position: center;
-   z-index: -1;
-   inset: 0;
-   background-color: var(--COLOR-EIGHT);
-   opacity: 0.78;
-
-   border-radius: 2rem;
-
-   padding: 2rem;
- }
-
- .utherdescription h1:hover {
-   color: white;
-   font-size: 2rem;
-   text-shadow: 1px 1px 1px black;
- }
-
- .utherdescription p {
-   padding: 0.25rem 1rem;
- }
 
  .utherdescription img {
-  width: 60%; 
+  width: 100%; 
   margin-left: auto; 
   margin-right: auto; 
   margin-top: 10px; 
@@ -63,6 +45,6 @@
   
  }
 
- #uthermotif {
+ .uthermotif {
 width: 100%; 
  } 

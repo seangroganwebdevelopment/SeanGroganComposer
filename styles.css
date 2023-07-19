@@ -34,7 +34,7 @@ textarea {
   --COLOR-FIVE: #f7b3b3;
   --COLOR-SIX: #833434;
   --COLOR-SEVEN: #333;
-  --COLOR-EIGHT: #fff; 
+  --COLOR-EIGHT: #fff;
 
   --COLOR-TEXT: #4e2020;
   --COLOR-TEXT2: #fff;
@@ -74,7 +74,6 @@ nav {
   align-items: center;
   padding: 1rem;
   text-align: center;
-
 }
 
 .navbar1 h1 {
@@ -84,58 +83,92 @@ nav {
 .navbar2 {
   background-color: var(--COLOR-ONE);
   text-decoration: none;
- 
-
 }
 
 .navbar2 ul {
   display: flex;
+  
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
+
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
   width: 100%;
   color: white;
-
-  
-
-
 }
 
 .navbar2 a {
   text-decoration: none;
   color: inherit;
   padding: 1rem;
-
-
 }
 
 .navbar2 a:hover {
   background-color: var(--COLOR-SEVEN);
   border-radius: 0.2rem;
-
 }
 
-.navbar2 ul li {
-  margin: 0 10px;
-  /* Add space around the flex items */
+.navbar2 ul a {
+  width: 100%; 
+
+  padding: 10px; 
   cursor: pointer;
-
-  white-space: wrap;
-
 }
 
-.navbar2 ul li:first-child {
-  margin-left: 0;
-  /* Remove the left margin from the first flex item */
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
 }
 
-.navbar2 ul li:last-child {
-  margin-right: 0;
-  /* Remove the right margin from the last flex item */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -80px; 
+  background-color: #ddbfbf;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color: var(--COLOR-EIGHT);
+  color: rgb(175, 125, 125);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: white; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li:not(.dropdown) {
+  width: 25%; /* Full width for all links in mobile */
+}
+
+
+@media screen and (min-width: 600px) {
+  li:not(.dropdown) {
+    width: auto; /* Allow links to wrap one after another on larger screens */
+  }
+  
+  .dropdown {
+    width: 100%; /* Allow dropdown to take its content width */
+  }
+
+  .dropdown-content {
+    position: relative; 
+    /* left: 20px;  */
+    width: 30%; 
+  }
 }
 
 /* Hero Section --*/
@@ -146,7 +179,6 @@ nav {
   background-position: top;
   position: relative;
   isolation: isolate;
-
   height: 80vh;
 }
 
@@ -159,21 +191,21 @@ nav {
   inset: 0;
   background-color: var(--COLOR-FIVE);
   opacity: 0.47;
-
 }
 
 .hero h1 {
   text-align: center;
   padding-top: 3rem;
   font-size: 3rem;
-  text-shadow: 5px 1px 1px rgb(209, 120, 120);
+  text-shadow: 5px 1px 1px var(--COLOR-SEVEN);
+  color: var(--COLOR-TEXT2)
+
 }
 
 @media screen and (min-width: 600px) {
   .hero {
     background-position: center;
   }
-  
 }
 
 /* Works Section --- */
