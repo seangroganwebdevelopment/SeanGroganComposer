@@ -127,7 +127,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: -80px; 
+  left: -20px; 
   background-color: #ddbfbf;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -161,17 +161,21 @@ li:not(.dropdown) {
   }
   
   .dropdown {
-    width: 100%; /* Allow dropdown to take its content width */
+    width: 80%; /* Allow dropdown to take its content width */
   }
 
   .dropdown-content {
     position: relative; 
-    /* left: 20px;  */
+    left: 50%; 
     width: 30%; 
   }
 }
 
 /* Hero Section --*/
+
+.section2 {
+  background-color: var(--COLOR-SEVEN);
+}
 
 .hero {
   background-image: url("images/nature/alex-hawthorne-EzbYxaZL0L0-unsplash.jpg");
