@@ -222,7 +222,7 @@ li:not(.dropdown) {
   isolation: isolate;
 
   margin: 2rem 0.8rem;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   padding-top: 2rem;
   border-radius: 2rem;
