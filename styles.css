@@ -62,7 +62,14 @@ textarea {
 
 /* || UTILITY CLASSES */
 
-/* Navbar */
+iframe {
+  border: none; 
+  border-radius: 8px; 
+  text-shadow: 21px 1px 1px rgb(177, 107, 107); 
+  /* text shadow doesn't work */
+}
+
+/* ||| NAVBAR ||| */
 
 nav {
   background-color: var(--COLOR-FIVE);

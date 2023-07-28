@@ -52,7 +52,8 @@
   }
  
   .utherdescription img {
-   width: 100%; 
+   width: 50%; 
+   height: auto; 
    margin-left: auto; 
    margin-right: auto; 
    margin-top: 10px; 
@@ -66,3 +67,13 @@
   .uthermotif {
  width: 100%; 
   } 
+
+  @media screen and (min-width: 600px) {
+    .utherdescription img {
+      width: 30%; 
+    }
+      }
+  
+    
+    
+  
