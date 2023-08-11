@@ -1,6 +1,7 @@
 
 .section2 {
   background-color: var(--COLOR-ONE);
+  width: 50%; 
 }
 
 .utherdescription {
@@ -32,6 +33,9 @@
   padding: 2rem;
 }
 
+/* .utherdescription {
+  max-width: 50%; 
+} */
 
  .utherdescription img {
   width: 100%; 
