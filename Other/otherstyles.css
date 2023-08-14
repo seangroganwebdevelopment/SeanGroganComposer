@@ -2,9 +2,7 @@
 
  .heroreduced {
     height: 30vh;
- 
- 
-  }
+ }
  
   /* ---WORK DESCRIPTION SECTION ||| */
  
@@ -52,7 +50,7 @@
   }
  
   .utherdescription img {
-   width: 50%; 
+   width: 80%; 
    height: auto; 
    margin-left: auto; 
    margin-right: auto; 
@@ -70,7 +68,7 @@
 
   @media screen and (min-width: 600px) {
     .utherdescription img {
-      width: 30%; 
+      width: 50%; 
     }
       }
   
